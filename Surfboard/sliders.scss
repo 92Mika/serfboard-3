@@ -1,0 +1,246 @@
+.sliders {
+   display: none;
+   height: 700px;
+  }
+  
+  .cursor {
+  cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+     color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .prev{
+    @include tablets{
+        padding-left: 100px;
+    }
+    @include phones{
+        padding-left: 16px;
+    }
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    @include tablets{
+        padding-right: 100px;
+    }
+    @include phones{
+        padding-right: 16px;
+    }
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+    
+.sliders-display{
+    display: flex;
+    background: #f8faf9;
+    overflow: hidden;
+    position: relative;
+    font-size: rem(30px);
+    margin-bottom: rem(14px);
+    margin-top: rem(20px);
+    color:black;
+    height:642px;
+    @include tablets{
+        display: block;
+    }
+    }
+
+.sliders-display__inner{
+    padding: 100px 50px 100px 100px; 
+    display: flex;
+    position: relative;  
+    @include tablets{
+        justify-content: center;
+        padding: 50px 0px 0px 0px; 
+
+    }
+}
+
+.slides__avatar-serfboard{
+    display: flex;
+    position: absolute;
+}
+
+.slides__avatar-img{
+    width: 350px;
+    height: 300px;
+    flex-shrink: 0;
+    color: #ECECEC;
+    @include tablets{
+        width: 300px;
+        height: 250px;
+    }    
+}
+
+.slides__content{
+    width: 374px;
+    height: 329px;
+    text-align: center;
+    display: inline;
+}
+
+.slides__parameters{
+    margin-top: 60px;
+    display: flex;  
+    @include tablets{
+        margin-top: 0px;
+    }
+   
+}
+
+.pmtrsbtn{
+    color:#FFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    width: 91px;
+    height: 91px;
+    background: #3A587E;
+    border-radius: 4px; 
+    cursor: pointer;
+    border: none;
+    @include tablets{
+        display: none;
+    }
+
+}
+
+.slides__arrow-img{
+  padding-left: 19px;
+  padding-bottom: 7px;
+ }
+
+.parametres__content{
+    display: none;
+    position: absolute;
+    font-size: 16px;
+    background: #ddd;
+    min-width: 160px;
+    overflow: auto;
+    text-decoration: none;
+    width: 280px;
+    height: 290px;
+    box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.02);
+    z-index: 1;
+}
+
+.parametres__content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 4px;
+    box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.06);
+}
+
+.parametres__content a:hover{
+    border-color: #ddd;
+}
+
+.slides__parameters:hover .parametres__content{
+display: block;
+}
+
+.slides__parameters:hover .pmtrsbtn{
+    background-color: #3A587E;
+}
+
+.slides{
+    font-size: 36px;
+    font-family: Alegreya Sans;
+    font-weight: 700;
+    margin-top: 40px;
+    @include tablets{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    }
+}
+
+.slides__text{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Alegreya Sans;
+    color: #666;
+    @include tablets{
+       padding-left: 100px;
+       padding-right: 100px;
+        }
+        @include phones{
+       padding-left: 30px;
+       padding-right: 30px;
+        }
+}
+
+.wood__cost{
+    justify-content: space-between;
+    display: flex;
+    width: 300px;
+    margin-top: 24px; 
+    @include tablets{
+        justify-content: space-evenly;
+        width: 708px;
+        padding-left: 220px;
+        padding-right: 140px;
+        margin-top: 10px;
+
+        @include phones{
+            padding-left: 0px;
+            padding-right: 240px;
+             }
+    }
+}
+
+.wood__title{
+    font-size: 18px;
+    font-weight: 400;   
+    color: #666;
+}
+
+b{
+    color: black;
+}
+
+.wood__btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    @include tablets{
+        justify-content: space-evenly;
+        padding-top: 10px;
+}
+}
+
+.wood__price{
+    font-size: 60px;
+}    
+  
+
+   
